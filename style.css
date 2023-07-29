@@ -6,6 +6,8 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth; 
+
+    
 }
 
 
@@ -49,7 +51,7 @@ section {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: url(background.JPEG) no-repeat;
+    background: url(background.jpeg) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -151,7 +153,7 @@ section {
 }
 
 .aboutme {
-    background-color: #000016;
+    background-color: #fff;
     
 }
 
@@ -160,23 +162,16 @@ section {
 }
 
 .aboutme p {
-    color: #3a6cf4;
+    color: #000000;
     font-size: 1.2em;
     font-weight: 700;
     font-size: 30px;
-}
-.imga{
-    margin-left: 75%;
 }
 
 .about-me {
     overflow: hidden; /* This clears the float */
   }
   
-  .profile-image {
-    float: right;
-    margin-right: 0.5%;
-  }
 
 .more-details {
     text-decoration: none;
@@ -185,6 +180,10 @@ section {
 
 .more-details:hover {
     color: #601cfc;
+}
+
+.contact {
+    background-color: #000016;
 }
 
 .contact .icon{
@@ -200,8 +199,8 @@ section {
 }
 
 .footer {
-    background-color: #000016;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
     padding: 2em;
     display: flex;
     justify-content: space-between;
@@ -220,6 +219,59 @@ section {
     font-size: 1.3em;
     padding: 0 12px 0 0;
 }
+
+.projects {
+    background-color: #000016;
+}
+
+.projects .content{
+    margin-top: 30px;
+}
+
+.project-card {
+
+    border: 1px solid #fff;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+
+.project-card:hover {
+   transform: scale(1.1);
+}
+
+.project-card:hover .project-image {
+    opacity: 0.9;
+ }
+
+.project-image img{
+    width: 100%
+}
+
+.project-info {
+    padding: 1em;
+}
+
+.project-category {
+    font-size: 0.8em;
+    color: #000;
+}
+
+.project-title {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.project-title span {
+    color: #316cf4;
+}
+
 
 @media (max-width:1023px){
     header{
@@ -273,3 +325,4 @@ section {
      
     }
 }
+
